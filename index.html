@@ -8,39 +8,45 @@
   <title>Los Simpsons</title>
   <style type="text/css">
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
-
+    @import url('https://fonts.cdnfonts.com/css/homer-simpson-revised');
     body {
       background: rgba(22, 102, 194, 0.36) url(https://media.revistagq.com/photos/5d6342d50ef2260008f5d161/master/pass/simpson.jpg) center center/cover no-repeat fixed;
       font-family: Roboto, sans-serif;
     }
 
     h3 {
-      color: #24CBEA;
-      font-size: 24px;
+      color: #FFDE00;
+      font-size: 35px;
       margin: 10px;
       padding: 5px;
-      background-color: #0000002b;
-      border-radius: 22px;
       display: inline-block;
+      font-family: 'Homer Simpson Revised', sans-serif;
     }
 
     .desc {
       color: white;
-      font-size: 18.5px;
+      font-family: 'Homer Simpson Revised', sans-serif;
+      font-size: 25px;
       margin-top: -30px;
       width: 500px;
     }
 
     .epsd {
-      color: #FFDE00;
+      color: #ffffff;
       text-decoration: none;
-      font-size: 18px;
+      font-family: 'Homer Simpson Revised', sans-serif;
+      font-size: 20px;
       padding: 2px 0px;
     }
 
     .epsd:hover {
-      color: #24CBEA;
+      color: #000000;
       background-color: #FFDE00;
+      border-radius: 10px;
+      border: 0px solid #000;
+      padding: 5px;
+      font-size: 22px;
+      font-weight: 300;
     }
 
     body .episodios {
@@ -51,44 +57,46 @@
       text-decoration: none;
     }
 
-    a.vea {
-      background: linear-gradient(to right, #ffde00, #f4f415);
-      background-color: #ffde00;
+     a.vea {
+      background: linear-gradient(196deg, #ffde00 0%, #f7d61a 100%);
       color: #fff;
-      font-family: Roboto, sans-serif;
-      font-size: 13px;
+      font-family:'Homer Simpson Revised', sans-serif;
+      font-size: 18px;
       font-weight: 800;
       font-style: normal;
       text-decoration: none;
-      padding: 12px 10px;
+      padding: 10px 25px;
       border: 0px solid #000;
       border-radius: 30px;
       display: inline-block;
       margin-bottom: 30px;
+      border: solid #000000 2px;
+      color: #000000;
     }
 
     a.vea:hover {
-      background: linear-gradient(to right, #ffe251, #f5f553);
-      background-color: #ffe251;
-    }
-
-    a.vea:active {
-      transform: scale(0.95);
+      transition : 581ms;
+      padding: 10px 48px;
+      transform : translateY(-4px);
+      background: linear-gradient(196deg, #ffde00 0%, #f7d61a 100%);
+      color: #000000;
+      border: solid 2px #000000;
     }
 
     .temps {
       margin-bottom: 20px;
+      width: 300px;
     }
   </style>
 </head>
 
 <body>
   <img width="250px" height="200px"
-    src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg" alt="Los simpson">
-  <p class="desc">Vea todos los episodios en Español Latino, desde la Temporada 1 hasta la 34. Incluye episodios
+    src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg" alt="Los simpson" >
+  <p class="desc" >Vea todos los episodios en Español Latino, desde la Temporada 1 hasta la 34. Incluye episodios
     especiales.</p>
 
-  <a class="vea" href="#" onclick="randomSite();">Ver Episodio Aleatorio</a>
+  <a class="vea" href="#" onclick="randomSite();" >Ver Episodio Aleatorio</a>
 
   <div class="temps">
     <h3>Temporada 1</h3>
@@ -112,7 +120,7 @@
   <div class="temps">
     <h3>Temporada 2</h3>
     <div class="episodios">
-      <a href="https://powvideo.net/9rfrv6q4l7av" class="epsd" target="_blank">2x01 Bart En Suspenso</a>
+      <a href="https://powvideo.net/9rfrv6q4l7av" class="epsd" target="_blank">2x01Bart En Suspenso</a>
       <a href="https://povvldeo.lol/rcrzn64xr9h3" class="epsd" target="_blank">2x02 Simpson y Dalila</a>
       <a href="https://povvldeo.lol/hvaldtyb6no9" class="epsd" target="_blank">2x03 La Casa-Arbol del Terror</a>
       <a href="https://powvideo.net/hi5dg65ir6qi" class="epsd" target="_blank">2x04 Dos Coches en Cada Garaje y Tres
@@ -181,7 +189,6 @@
       <a href="https://povvldeo.lol/1qxztw1ul1qq" class="epsd" target="_blank">30x04 La casa del árbol del terror XXIX</a>
       <a href="https://povvldeo.lol/zxoengc458u1" class="epsd" target="_blank">30x05 Cariño, no puedes conducir mi auto</a>
       <a href="https://povvldeo.lol/ixozjaxud5s5" class="epsd" target="_blank">30x06 De Rusia sin amor</a>
-      <a href="https://watchsb.com/gpi566xcvpgd" class="epsd" target="_blank">30x06 De Rusia sin amor 2</a>
       <a href="" class="epsd" target="_blank"></a>
       <a href="" class="epsd" target="_blank"></a>
       <a href="" class="epsd" target="_blank"></a>
