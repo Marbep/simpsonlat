@@ -7,11 +7,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Los Simpsons</title>
   <style type="text/css">
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
     @import url('https://fonts.cdnfonts.com/css/homer-simpson-revised');
+    
     body {
       background: rgba(22, 102, 194, 0.36) url(https://media.revistagq.com/photos/5d6342d50ef2260008f5d161/master/pass/simpson.jpg) center center/cover no-repeat fixed;
       font-family: Roboto, sans-serif;
+      margin: 0 1px;
+      padding:0
+    }
+
+    .logo{
+      margin-left: 50px;
+    }
+
+    .desc {
+      color: white;
+      font-family: 'Homer Simpson Revised', sans-serif;
+      font-size: 25px;
+      margin-top: -30px;
+      margin-left: 30px;
+      width: 500px;
     }
 
     h3 {
@@ -20,21 +36,14 @@
       margin: 10px;
       padding: 5px;
       display: inline-block;
+      text-shadow: -5px 1px 5px #000000;
       font-family: 'Homer Simpson Revised', sans-serif;
-    }
-
-    .desc {
-      color: white;
-      font-family: 'Homer Simpson Revised', sans-serif;
-      font-size: 25px;
-      margin-top: -30px;
-      width: 500px;
     }
 
     .epsd {
       color: #ffffff;
       text-decoration: none;
-      font-family: 'Homer Simpson Revised', sans-serif;
+      font-family: 'Arimo', sans-serif;
       font-size: 20px;
       padding: 2px 0px;
     }
@@ -46,7 +55,6 @@
       border: 0px solid #000;
       padding: 5px;
       font-size: 22px;
-      font-weight: 300;
     }
 
     body .episodios {
@@ -69,6 +77,7 @@
       border: 0px solid #000;
       border-radius: 30px;
       display: inline-block;
+      margin-left: 20px;
       margin-bottom: 30px;
       border: solid #000000 2px;
       color: #000000;
@@ -87,18 +96,35 @@
       margin-bottom: 20px;
       width: 300px;
     }
+
+    .tcont{
+      display: flex;
+    }
+
+    .hcont{
+      background: #4d4d4d75;
+    }
+
+
+
   </style>
 </head>
 
 <body>
-  <img width="250px" height="200px"
+  <div class="hcont">
+   <div class="logo">
+     <img width="250px" height="200px"
     src="https://upload.wikimedia.org/wikipedia/commons/9/98/The_Simpsons_yellow_logo.svg" alt="Los simpson" >
+   </div>
   <p class="desc" >Vea todos los episodios en Español Latino, desde la Temporada 1 hasta la 34. Incluye episodios
     especiales.</p>
 
   <a class="vea" href="#" onclick="randomSite();" >Ver Episodio Aleatorio</a>
+  </div>
 
-  <div class="temps">
+
+  <div class="tcont">
+    <div class="temps" id="ti">
     <h3>Temporada 1</h3>
     <div class="episodios">
       <a href="https://povvldeo.lol/vq1ydn92pol3" class="epsd" target="_blank">1x01 Sin blanca Navidad</a>
@@ -117,7 +143,7 @@
     </div>
   </div>
 
-  <div class="temps">
+  <div class="temps" id="tii">
     <h3>Temporada 2</h3>
     <div class="episodios">
       <a href="https://powvideo.net/9rfrv6q4l7av" class="epsd" target="_blank">2x01Bart En Suspenso</a>
@@ -150,7 +176,7 @@
     </div>
   </div>
 
-  <div class="temps">
+  <div class="temps" id="txxix">
     <h3>Temporada 29</h3>
     <div class="episodios">
       <a href="https://povvldeo.lol/rjpy2aioi8ve" class="epsd" target="_blank">29x01 Los siervos</a>
@@ -180,7 +206,7 @@
     </div>
   </div>
 
-  <div class="temps">
+  <div class="temps" id="txxx">
     <h3>Temporada 30</h3>
     <div class="episodios">
       <a href="https://povvldeo.lol/hx9vhhc4k0qr" class="epsd" target="_blank">30x01 Bart no está muerto</a>
@@ -197,6 +223,7 @@
       <a href="" class="epsd" target="_blank"></a>
       <a href="" class="epsd" target="_blank"></a>
     </div>
+  </div>
   </div>
 
   <script>
